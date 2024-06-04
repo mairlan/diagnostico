@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico de Bruxismo</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Diagnóstico de Bruxismo</h1>
+            <a href="../../index.html">menu</a>
+        </div>
+
+        <form id="quizForm">
+            <div class="question" id="question1">
+                <label>1) Alguém da sua família tem bruxismo?</label>
+                <div class="options">
+                    <button type="button" id="q1_sim" onclick="selectAnswer(1, 'sim')">Sim</button>
+                    <button type="button" id="q1_nao" onclick="selectAnswer(1, 'nao')">Não</button>
+                </div>
+                <button type="button" onclick="nextQuestion(1)">Próxima</button>
+            </div>
+            <div class="question" id="question2" style="display:none;">
+                <label>2) Em momentos de estresse, angústia e medo você aperta seus dentes?</label>
+                <div class="options">
+                    <button type="button" id="q2_sim" onclick="selectAnswer(2, 'sim')">Sim</button>
+                    <button type="button" id="q2_nao" onclick="selectAnswer(2, 'nao')">Não</button>
+                </div>
+                <button type="button" onclick="previousQuestion(2)">Anterior</button>
+                <button type="button" onclick="nextQuestion(2)">Próxima</button>
+            </div>
+            <div class="question" id="question3" style="display:none;">
+                <label>3) Você rói unhas e morde objetos?</label>
+                <div class="options">
+                    <button type="button" id="q3_sim" onclick="selectAnswer(3, 'sim')">Sim</button>
+                    <button type="button" id="q3_nao" onclick="selectAnswer(3, 'nao')">Não</button>
+                </div>
+                <button type="button" onclick="previousQuestion(3)">Anterior</button>
+                <button type="button" onclick="nextQuestion(3)">Próxima</button>
+            </div>
+            <div class="question" id="question4" style="display:none;">
+                <label>4) Sente dor de cabeça no período da manhã?</label>
+                <div class="options">
+                    <button type="button" id="q4_sim" onclick="selectAnswer(4, 'sim')">Sim</button>
+                    <button type="button" id="q4_nao" onclick="selectAnswer(4, 'nao')">Não</button>
+                </div>
+                <button type="button" onclick="previousQuestion(4)">Anterior</button>
+                <button type="button" onclick="nextQuestion(4)">Próxima</button>
+            </div>
+            <div class="question" id="question5" style="display:none;">
+                <label>5) Sente dores musculares na face, principalmente na bochecha?</label>
+                <div class="options">
+                    <button type="button" id="q5_sim" onclick="selectAnswer(5, 'sim')">Sim</button>
+                    <button type="button" id="q5_nao" onclick="selectAnswer(5, 'nao')">Não</button>
+                </div>
+                <button type="button" onclick="previousQuestion(5)">Anterior</button>
+                <button type="button" onclick="nextQuestion(5)">Próxima</button>
+            </div>
+            <div class="question" id="question6" style="display:none;">
+                <label>6) Você troca o dia pela noite?</label>
+                <div class="options">
+                    <button type="button" id="q6_sim" onclick="selectAnswer(6, 'sim')">Sim</button>
+                    <button type="button" id="q6_nao" onclick="selectAnswer(6, 'nao')">Não</button>
+                </div>
+                <button type="button" onclick="previousQuestion(6)">Anterior</button>
+                <button type="button" onclick="nextQuestion(6)">Próxima</button>
+            </div>
+            <div class="question" id="question7" style="display:none;">
+                <label>7) Possui boas noites de sono?</label>
+                <div class="options">
+                    <button type="button" id="q7_sim" onclick="selectAnswer(7, 'sim')">Sim</button>
+                    <button type="button" id="q7_nao" onclick="selectAnswer(7, 'nao')">Não</button>
+                </div>
+                <button type="button" onclick="previousQuestion(7)">Anterior</button>
+                <button type="button" onclick="nextQuestion(7)">Próxima</button>
+            </div>
+            <div class="question" id="question8" style="display:none;">
+                <label>8) Possui doenças neurológicas como Parkinson?</label>
+                <div class="options">
+                    <button type="button" id="q8_sim" onclick="selectAnswer(8, 'sim')">Sim</button>
+                    <button type="button" id="q8_nao" onclick="selectAnswer(8, 'nao')">Não</button>
+                </div>
+                <button type="button" onclick="previousQuestion(8)">Anterior</button>
+                <button type="button" onclick="nextQuestion(8)">Próxima</button>
+            </div>
+            <div class="question" id="question9" style="display:none;">
+                <label>9) Você fuma?</label>
+                <div class="options">
+                    <button type="button" id="q9_sim" onclick="selectAnswer(9, 'sim')">Sim</button>
+                    <button type="button" id="q9_nao" onclick="selectAnswer(9, 'nao')">Não</button>
+                </div>
+                <button type="button" onclick="previousQuestion(9)">Anterior</button>
+                <button type="button" onclick="nextQuestion(9)">Próxima</button>
+            </div>
+            <div class="question" id="question10" style="display:none;">
+                <label>10) Possui distúrbios respiratórios (ronco, apneia) ou rinite?</label>
+                <div class="options">
+                    <button type="button" id="q10_sim" onclick="selectAnswer(10, 'sim')">Sim</button>
+                    <button type="button" id="q10_nao" onclick="selectAnswer(10, 'nao')">Não</button>
+                </div>
+                <button type="button" onclick="previousQuestion(10)">Anterior</button>
+                <button type="button" onclick="calculateResult()">Ver Resultado</button>
+            </div>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="../js/js.js"></script>
+</body>
+</html>
