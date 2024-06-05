@@ -56,11 +56,11 @@ function calculateResult() {
     let resultText;
 
     if (score >= 0 && score <= 1) {
-        resultText = "Risco Leve, Como indicado pelas suas respostas, levando em consideração sintomas e sinais, a probabilidade é pequena. Fique atento aos sinais!";
+        resultText = "<h3>Risco Leve </h3> como indicado pelas suas respostas, levando em consideração sintomas e sinais, a probabilidade é pequena. Fique atento aos sinais!";
     } else if (score >= 2 && score <=4) {
-        resultText = "Risco Moderado, Com base nos sintomas e sinais descritos em suas respostas, a probabilidade é mediana. Esteja atento aos sinais e consulte um especialista para uma avaliação!";
+        resultText = "<h3>Risco Moderado </h3> com base nos sintomas e sinais descritos em suas respostas, a probabilidade é mediana. Esteja atento aos sinais e consulte um especialista para uma avaliação!";
     } else if (score > 4){
-        resultText = "Risco grave, Com base nos sinais e sintomas descritos em suas respostas, a probabilidade é alta. Recomendo procurar um especialista para uma avaliação";
+        resultText = "<h3>Risco grave </h3> com base nos sinais e sintomas descritos em suas respostas, a probabilidade é alta. Recomendo procurar um especialista para uma avaliação";
     }
 
     document.getElementById('quizForm').style.display = 'none';
@@ -68,5 +68,5 @@ function calculateResult() {
     document.getElementById('menu').style.justifyContent = 'center';
 
 
-    document.getElementById('result').innerText = resultText;
+    document.getElementById('result').innerHTML = resultText;
 }
