@@ -80,7 +80,11 @@ a {
 .options {
     text-align: center;
 }
-
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
 
 
 
