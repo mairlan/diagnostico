@@ -10,7 +10,6 @@
     <div class="container">
         <div>
             <h1>Diagnóstico de Bruxismo</h1>
-            <a href="../../index.html">menu</a>
         </div>
 
         <form id="quizForm">
@@ -100,11 +99,16 @@
                     <button type="button" id="q10_sim" onclick="selectAnswer(10, 'sim')">Sim</button>
                     <button type="button" id="q10_nao" onclick="selectAnswer(10, 'nao')">Não</button>
                 </div>
-                <button type="button" onclick="previousQuestion(10)">Anterior</button>
-                <button type="button" onclick="calculateResult()">Ver Resultado</button>
+                    <button type="button" onclick="previousQuestion(10)">Anterior</button>
+                    <button type="button" onclick="calculateResult()">Ver Resultado</button>                
             </div>
         </form>
+        
         <div id="result"></div>
+        <div id="menu">
+            <a  href="../../index.html">menu</a>
+        </div>
+        
     </div>
     <script src="../js/js.js"></script>
 </body>

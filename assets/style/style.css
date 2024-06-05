@@ -1,17 +1,19 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #FFFFFF;
     margin: 0;
     padding: 0;
 }
 
 .container {
     max-width: 600px;
+    height: 400px;
     margin: 50px auto;
-    background: #fff;
+    background: #800000;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    color: white;
 }
 
 h1 {
@@ -57,7 +59,7 @@ button:hover {
 #result {
     margin-top: 20px;
     padding: 10px;
-    background: #e9ecef;
+    background: #800000;
     border-radius: 4px;
     text-align: center;
 }
@@ -73,7 +75,10 @@ a {
     margin-right: 10px;
     border-radius: 4px;
     display: inline;
-    float: right;
+}
+
+.options {
+    text-align: center;
 }
 
 
